@@ -1,20 +1,17 @@
 const colors = {
-  backgroundCOlor: "#005963",
+  backgroundColor: "#005963",
   highlightColor: "#00ffd0",
+  black: "#000000",
 };
 const fontSize = {
-  headerOne: "48px",
-  headerTwo: "40px",
-  mediumHeader: "38px",
-  headerThree: "32px",
-  largeText: "24px",
-  mediumText: "20px",
-  customText: "16px",
-  smallText: "14px",
-  verySmallText: "12px",
-  extraLargeText: "64px",
-  littleText: "12px",
-  smallestText: "10px",
+  x96: "96px",
+  x40: "40px",
+  x24: "24px",
+  x18: "18px",
+  x14: "14px",
+  x12: "12px",
+  x16: "16px",
+  x20: "20px",
 };
 const responsive = {
   verySmall: "320px",
@@ -28,8 +25,6 @@ const responsive = {
 };
 
 const fontFamily = {
-  inter: "Inter, sans-serif",
-  gilroy: "Gilroy,sans-serif ",
+  Lato: "Lato, sans-serif",
 };
-
 export { colors, fontSize, responsive, fontFamily };
