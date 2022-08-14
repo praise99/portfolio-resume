@@ -4,7 +4,7 @@ const ContactWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: auto;
+  height: 101vh;
   /* padding-bottom: 60px; */
 `;
 const ContactEmpty = styled.div`
