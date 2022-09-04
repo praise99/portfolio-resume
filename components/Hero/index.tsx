@@ -4,6 +4,8 @@ import { HeadingOneText } from "common/typography/style";
 import Links from "common/social-links";
 import Image from "next/image";
 import { Logo } from "assets";
+import Link from "next/link";
+import { CustomButton } from "common/buttons";
 const Hero = () => {
   return (
     <HeroWrapper>
@@ -27,7 +29,23 @@ const Hero = () => {
                     priority={true}
                   />
                 </div>
+                <div className="image-hidden">
+                  <Image
+                    src={Logo}
+                    alt="my-picture"
+                    height={40}
+                    width={40}
+                    priority={true}
+                  />
+                </div>
                 <div className="layer"></div>
+              </div>
+              <div className="button-hidden">
+                <Link href="#hire">
+                  <a>
+                    <CustomButton>HIRE PRAISE</CustomButton>
+                  </a>
+                </Link>
               </div>
             </div>
           </ThirdCard>

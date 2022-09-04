@@ -5,7 +5,11 @@ const ContactWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 101vh;
-  /* padding-bottom: 60px; */
+
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 const ContactEmpty = styled.div`
   width: 7%;
@@ -18,6 +22,14 @@ const ContactForms = styled.form`
   border-left: 2px solid ${({ theme }) => theme.colors.highlightColor};
   border-right: 2px solid ${({ theme }) => theme.colors.highlightColor};
   padding: 30px;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    padding: 20px;
+  }
   .title {
     margin-top: 0px;
     margin-bottom: 24px;
@@ -28,6 +40,10 @@ const ContactInformation = styled.div`
   height: 100%;
   border-left: 2px solid ${({ theme }) => theme.colors.highlightColor};
   padding: 30px;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+    border-left: none;
+  }
   .image {
     border-radius: 50%;
     overflow: hidden;

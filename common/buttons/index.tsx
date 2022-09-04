@@ -18,6 +18,9 @@ const CustomButton = styled.button<{
   text-transform: uppercase;
   padding: 12px 20px;
   border: 2px solid #00ffd0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
   cursor: pointer;
   :hover {
     background-color: ${(props) => (props.secondary ? "#00ffd0" : "#005963")};

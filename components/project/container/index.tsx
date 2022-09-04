@@ -12,6 +12,7 @@ import { CustomButton } from "common/buttons";
 import Link from "next/link";
 import Image from "next/image";
 import { gsap, Power2 } from "gsap";
+import * as gtag from "lib/Gtag";
 
 interface ContainerProps {
   title: string;
@@ -37,15 +38,25 @@ const Featured = ({ title, description, link, projects }: ContainerProps) => {
       }
     );
   }, []);
+  const googleAnalytics = (title: any) => {
+    gtag.event({
+      action: title,
+      category: "Landing page",
+      label: "button clicked",
+      value: `clicked on viewing ${title}`,
+    });
+  };
   return (
-    <Container title="FEATURED PROJECT">
+    <Container title="FEATURED PROJECT" id="projects">
       <ProjectWrapper>
         <ProjectDescription>
           <HeadingTwoText>{title}</HeadingTwoText>
           <SectionHeading className="description">{description}</SectionHeading>
           <Link href={link}>
             <a>
-              <CustomButton>view website</CustomButton>
+              <CustomButton onClick={() => googleAnalytics(title)}>
+                view website
+              </CustomButton>
             </a>
           </Link>
           <br />

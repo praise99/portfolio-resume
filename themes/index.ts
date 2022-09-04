@@ -3,9 +3,23 @@ const colors = {
   highlightColor: "#00ffd0",
   black: "#000000",
 };
+// backgroundColor: "#005963",
+// highlightColor: "#00ffd0",
+
+// 1
+//   backgroundColor: "#2155CD",
+//   highlightColor: "#79DAE8",
+// 2
+//   backgroundColor: "#2155CD",
+//   highlightColor: "#E8F9FD",
+// 2155CD
+// 0AA1DD
+// 79DAE8
+// E8F9FD
 const fontSize = {
   x96: "96px",
   x40: "40px",
+  x32: "32px",
   x24: "24px",
   x18: "18px",
   x14: "14px",
@@ -16,8 +30,8 @@ const fontSize = {
 const responsive = {
   verySmall: "320px",
   sm: "600px",
-  md: "768px",
-  lg: "992px",
+  mb: "700px",
+  lg: "1100px",
   xxl: "1024px",
   xxl2: "1200px",
   xx2: "1150px",

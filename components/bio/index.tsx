@@ -5,6 +5,7 @@ import { SectionHeading } from "common/typography/style";
 import { CustomButton } from "common/buttons";
 import Image from "next/image";
 import { Picture } from "assets";
+import Link from "next/link";
 const Bio = () => {
   let skills = [
     {
@@ -29,7 +30,7 @@ const Bio = () => {
     },
   ];
   return (
-    <Container title="bio">
+    <Container title="bio" id="bio">
       <BioWrapper>
         <BioDescription>
           <SectionHeading className="desc">
@@ -48,13 +49,15 @@ const Bio = () => {
             would like to share with your future clients!
           </SectionHeading>
           <br />
-          <div>
-            <CustomButton>Talk to praise</CustomButton>
-          </div>
+          <Link href="#hire">
+            <a>
+              <CustomButton>Talk to praise</CustomButton>
+            </a>
+          </Link>
         </BioDescription>
         <BioImage>
           <div className="image">
-            <Image src={Picture} alt="my-picutre" />
+            <Image src={Picture} priority={true} alt="my-picutre" />
           </div>
           <div className="layer"></div>
         </BioImage>

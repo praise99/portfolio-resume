@@ -5,17 +5,33 @@ const BioWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 101vh;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 const BioDescription = styled.div`
   width: 48%;
   height: 100%;
   border-right: 2px solid ${({ theme }) => theme.colors.highlightColor};
   padding: 50px;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+    border-right: none;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
   .desc {
     margin-bottom: 10px;
     font-size: ${({ theme }) => theme.fontSize.x20};
     line-height: 28px;
     margin-top: 0;
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      font-size: ${({ theme }) => theme.fontSize.x16};
+      line-height: 24px;
+    }
   }
 `;
 const BioImage = styled.div`
@@ -23,6 +39,11 @@ const BioImage = styled.div`
   height: 100%;
   width: 48%;
   position: relative;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+    border-top: 2px solid ${({ theme }) => theme.colors.highlightColor};
+    border-left: none;
+  }
 
   .image {
     width: 100%;

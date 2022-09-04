@@ -14,6 +14,11 @@ const HeadingOneText = styled.h1`
   line-height: 96px;
   font-weight: 700;
   letter-spacing: -0.05em;
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    font-size: ${({ theme }) => theme.fontSize.x32};
+    line-height: 32px;
+    text-align: center;
+  }
 `;
 
 const HeadingTwoText = styled.h2`
@@ -24,6 +29,10 @@ const HeadingTwoText = styled.h2`
   font-weight: 700;
   line-height: 48px;
   font-weight: 700;
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    font-size: ${({ theme }) => theme.fontSize.x24};
+    line-height: 32px;
+  }
 `;
 
 const HeadingThreeText = styled.h3`

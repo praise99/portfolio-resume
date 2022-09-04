@@ -4,10 +4,11 @@ import { HeadingThreeText } from "common/typography/style";
 interface ContainerProps {
   children: ReactNode;
   title: string;
+  id?: string;
 }
-const Container = ({ children, title, ...rest }: ContainerProps) => {
+const Container = ({ children, id, title, ...rest }: ContainerProps) => {
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <FirstCard>
         <SecondCard>
           <HeadingThreeText className="heading">{title}</HeadingThreeText>

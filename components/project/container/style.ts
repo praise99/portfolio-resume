@@ -4,19 +4,35 @@ const ProjectWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    flex-direction: column;
+  }
 `;
 const ProjectDescription = styled.div`
   width: 40%;
   padding: 40px;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    padding: 20px;
+  }
   .description {
     max-width: 100%;
     margin-bottom: 40px;
     line-height: 28px;
     font-size: ${({ theme }) => theme.fontSize.x20};
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      font-size: ${({ theme }) => theme.fontSize.x16};
+      line-height: 24px;
+    }
   }
 `;
 const ProjectImage = styled.div`
   width: 60%;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    width: 100%;
+  }
   .image-link {
     position: relative;
     width: 100%;
@@ -55,11 +71,13 @@ const ProjectImage = styled.div`
     border-width: 8px;
     border-color: #001a1d;
     border-radius: 12px;
-    /* background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg); */
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 24px 0 rgb(0 26 29 / 50%);
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      width: 100%;
+    }
     :hover {
       background-color: #222;
     }

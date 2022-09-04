@@ -21,16 +21,16 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Lato";
   font-weight: 900;
   src: url("../assets/fonts/Lato/Lato-Black.ttf");
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Lato";
   font-weight: 700;
   src: url("..assets/fonts/Lato/Lato-Bold.ttf");
-}
+} */
 @font-face {
   font-family: "Lato";
   src: url("..assets/fonts/Lato/Lato-Semibold.ttf");
@@ -44,17 +44,17 @@ export const GlobalStyle = createGlobalStyle`
   src: url("..assets/fonts/Lato/Lato-Medium.ttf");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Lato";
   font-weight: 400;
   src: url("..assets/fonts/Lato/Lato-Regular.ttf");
-}
-
+} */
+/* 
 @font-face {
   font-family: "Lato";
   font-weight: 300;
   src: url("..assets/fonts/Lato/Lato-Light.ttf");
-}
+} */
 @font-face {
   font-family: "Lato";
   font-weight: 100;
