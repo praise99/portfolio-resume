@@ -14,7 +14,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 24px;
     background-color: ${({ theme }) => theme.colors.backgroundColor};
     color:  ${({ theme }) => theme.colors.highlightColor};
-
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      padding:10px;
+    }
   
   }
   html{

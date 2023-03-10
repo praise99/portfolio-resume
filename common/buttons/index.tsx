@@ -26,6 +26,10 @@ const CustomButton = styled.button<{
     background-color: ${(props) => (props.secondary ? "#00ffd0" : "#005963")};
     color: ${(props) => (props.secondary ? "#005963" : "#00ffd0")};
   }
+  @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+    padding: 2px 10px;
+    font-size: 12px;
+  }
 `;
 const Button = ({ children }: buttonProps) => {
   return <Button secondary>{children}</Button>;

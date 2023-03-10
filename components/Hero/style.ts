@@ -42,7 +42,7 @@ const ThirdCard = styled.div`
       margin-bottom: 10px;
     }
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
-      padding: 24px 15px;
+      padding: 44px 15px;
     }
   }
   .hero_description {
@@ -62,7 +62,7 @@ const ThirdCard = styled.div`
       border-top: 2px solid ${({ theme }) => theme.colors.highlightColor};
     }
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
-      padding: 15px;
+      padding: 25px 15px;
       flex-direction: column;
     }
 

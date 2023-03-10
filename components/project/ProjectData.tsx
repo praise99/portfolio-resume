@@ -4,43 +4,52 @@ interface IProjectData {
   description: string;
   link: string;
   projects: string[];
+  githubLink: string;
 }
 
 export const ProjectData: IProjectData[] = [
   {
     id: 1,
-    title: "App Development Project",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id luctus orci. Nulla dolor libero, tincidunt quis leo vitae, posuere pretium ligula. Cras accumsan, odio eu luctus imperdiet, sapien augue maximus elit.",
-    link: "string",
+    title: "MUSIC APP",
+    description: "A music app to play my favorite songs and albums",
+    link: "https://praise-musica.netlify.app/",
+    githubLink: "https://github.com/praise99/musica",
     projects: [
-      "Template",
-      "Webflow CMS",
-      "Video",
-      "Animations",
+      "NEXT JS",
+      "CONTEXT API",
+      "CSS",
+      "TYPESCRIPT",
       "Responsive Design",
     ],
   },
   {
     id: 2,
-    title: "Real Estate Project",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id luctus orci. Nulla dolor libero, tincidunt quis leo vitae, posuere pretium ligula. Cras accumsan, odio eu luctus imperdiet, sapien augue maximus elit.",
-    link: "string",
-    projects: [" Animations", "CSS3", "Ecommerce", "HTML", "Javascript"],
+    title: "VERICO WEBSITE",
+    description: "A UI website for a fintech company.",
+    link: "https://fandk-dashboard.netlify.app/",
+    githubLink: "",
+    projects: ["TYPESCRIPT", "CSS3", "NextJS", "HTML", "Javascript"],
   },
   {
     id: 3,
-    title: "Fintech Website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id luctus orci. Nulla dolor libero, tincidunt quis leo vitae, posuere pretium ligula. Cras accumsan, odio eu luctus imperdiet, sapien augue maximus elit.",
-    link: "string",
+    title: "VERIFICATION PAGE",
+    description: "Verification UI for a online Business.",
+    githubLink: "https://github.com/praise99/react-task",
+    link: "https://praisebuyfood.herokuapp.com/",
     projects: [
-      "Animations",
-      "Ecommerce",
-      "Webflow CMS",
-      "Template",
+      "STYLED COMPONENTS",
+      "REACT JS",
+      "HTML",
+      "Javascript",
       "Responsive Design",
     ],
+  },
+  {
+    id: 4,
+    title: "GITHUB CLONE",
+    description: "A Clone of users Github profile page",
+    githubLink: "https://github.com/praise99/github-profile-clone",
+    link: "https://praise-github-clone.netlify.app/",
+    projects: ["API", "HTML", "Javascript", "Responsive Design"],
   },
 ];

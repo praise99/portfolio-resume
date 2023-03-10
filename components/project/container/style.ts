@@ -32,6 +32,7 @@ const ProjectImage = styled.div`
   width: 60%;
   @media (max-width: ${({ theme }) => theme.responsive.lg}) {
     width: 100%;
+    margin-bottom: 20px;
   }
   .image-link {
     position: relative;
@@ -176,7 +177,7 @@ const TagFolder = styled.div`
   flex-wrap: wrap;
 `;
 const Tag = styled.div`
-  text-transform: capitalize;
+  text-transform: lowercase;
   display: inline-block;
   margin-right: 8px;
   margin-bottom: 12px;
@@ -188,4 +189,15 @@ const Tag = styled.div`
   font-size: ${({ theme }) => theme.fontSize.x12};
   line-height: 16px;
 `;
-export { ProjectWrapper, ProjectDescription, ProjectImage, TagFolder, Tag };
+const Box = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export {
+  ProjectWrapper,
+  ProjectDescription,
+  ProjectImage,
+  TagFolder,
+  Tag,
+  Box,
+};

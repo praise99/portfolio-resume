@@ -6,6 +6,7 @@ import {
   ProjectImage,
   Tag,
   TagFolder,
+  Box,
 } from "./style";
 import { HeadingTwoText, SectionHeading } from "common/typography/style";
 import { CustomButton } from "common/buttons";
@@ -17,8 +18,15 @@ interface ContainerProps {
   description: string;
   link: string;
   projects: string[];
+  githubLink: string;
 }
-const Featured = ({ title, description, link, projects }: ContainerProps) => {
+const Featured = ({
+  title,
+  description,
+  link,
+  projects,
+  githubLink,
+}: ContainerProps) => {
   const tl = gsap.timeline();
   useEffect(() => {
     gsap.fromTo(
@@ -58,13 +66,23 @@ const Featured = ({ title, description, link, projects }: ContainerProps) => {
         <ProjectDescription>
           <HeadingTwoText>{title}</HeadingTwoText>
           <SectionHeading className="description">{description}</SectionHeading>
-          <Link href={link}>
-            <a>
-              <CustomButton onClick={() => googleAnalytics(title)}>
-                view website
-              </CustomButton>
-            </a>
-          </Link>
+          <Box>
+            <Link href={link}>
+              <a>
+                <CustomButton onClick={() => googleAnalytics(title)}>
+                  website
+                </CustomButton>
+              </a>
+            </Link>
+            <Link href={githubLink}>
+              <a>
+                <CustomButton onClick={() => googleAnalytics(title)}>
+                  github&nbsp;
+                </CustomButton>
+              </a>
+            </Link>
+          </Box>
+
           <br />
           <TagFolder>
             {projects.map((item) => {

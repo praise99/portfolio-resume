@@ -10,10 +10,11 @@ const Wrapper = styled.div`
   padding-top: 30px;
 `;
 const Footer = () => {
+  const date: string = JSON.stringify(new Date().getFullYear());
   return (
     <Wrapper>
       <SectionHeading>
-        Copyright 2022 © Praise Adeoti. All Rights Reserved. Design Proudly
+        Copyright {date} © Praise ADEOTI. All Rights Reserved. Design Proudly
         inspired by © Daniel James
       </SectionHeading>
     </Wrapper>

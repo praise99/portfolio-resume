@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
+
       <ThemeProvider theme={themes}>
         <GlobalStyle />
         <Layout>

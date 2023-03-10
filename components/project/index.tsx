@@ -13,6 +13,7 @@ const Projects = () => {
             description={item.description}
             link={item.link}
             projects={item.projects}
+            githubLink={item.githubLink}
           />
         );
       })}
