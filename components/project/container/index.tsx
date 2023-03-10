@@ -12,7 +12,7 @@ import { CustomButton } from "common/buttons";
 import Link from "next/link";
 import Image from "next/image";
 import { gsap, Power2 } from "gsap";
-import * as gtag from "lib/Gtag";
+import * as gtag from "lib/gtag";
 
 interface ContainerProps {
   title: string;
