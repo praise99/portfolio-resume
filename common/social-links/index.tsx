@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Twitter, Instagram, Linkedin } from "assets";
+import { Twitter, Github, Linkedin } from "assets";
 import Image from "next/image";
 import Link from "next/link";
 const LinksWrapper = styled.div`
@@ -13,19 +13,19 @@ const LinksWrapper = styled.div`
 const Links = () => {
   return (
     <LinksWrapper>
-      <Link href="#">
-        <a>
-          <Image src={Twitter} alt="icon-links" />
+      <Link href="https://github.com/praise99">
+        <a target="_blank">
+          <Image src={Github} alt="icon-links" />
         </a>
       </Link>
-      <Link href="#">
-        <a className="insta">
-          <Image src={Instagram} alt="icon-links" />
-        </a>
-      </Link>
-      <Link href="#">
-        <a>
+      <Link href="https://www.linkedin.com/in/praise-adeoti-ab6b03190/">
+        <a target="_blank" className="insta">
           <Image src={Linkedin} alt="icon-links" />
+        </a>
+      </Link>
+      <Link href="https://twitter.com/yemi_obukunmi">
+        <a target="_blank">
+          <Image src={Twitter} alt="icon-links" />
         </a>
       </Link>
     </LinksWrapper>
