@@ -12,9 +12,6 @@ import { CustomButton } from "common/buttons";
 import Link from "next/link";
 import Image from "next/image";
 import { gsap, Power2 } from "gsap";
-// @ts-ignore
-import * as gtag from "lib/gtag";
-
 interface ContainerProps {
   title: string;
   description: string;
@@ -39,8 +36,16 @@ const Featured = ({ title, description, link, projects }: ContainerProps) => {
       }
     );
   }, []);
+  const event = ({ action, category, label, value }: any) => {
+    // @ts-ignore
+    window.gtag("event", action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  };
   const googleAnalytics = (title: any) => {
-    gtag.event({
+    event({
       action: title,
       category: "Landing page",
       label: "button clicked",
