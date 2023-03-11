@@ -35,7 +35,7 @@ export const ProjectData: IProjectData[] = [
     title: "VERIFICATION PAGE",
     description: "Verification UI for a online Business.",
     githubLink: "https://github.com/praise99/react-task",
-    link: "https://praisebuyfood.herokuapp.com/",
+    link: "https://praisebuyfood.netlify.app/",
     projects: [
       "STYLED COMPONENTS",
       "REACT JS",
@@ -51,13 +51,5 @@ export const ProjectData: IProjectData[] = [
     githubLink: "https://github.com/praise99/github-profile-clone",
     link: "https://praise-github-clone.netlify.app/",
     projects: ["API", "HTML", "Javascript", "Responsive Design"],
-  },
-  {
-    id: 4,
-    title: "FINTECH DASHBOARD",
-    description: "A UI Dashboard for a fintech company.",
-    githubLink: "#",
-    link: "https://fandk-dashboard.netlify.app/",
-    projects: ["API", "HTML", "Javascript", "TYPESCRIPT", "REACT JS"],
   },
 ];
