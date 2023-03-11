@@ -71,7 +71,7 @@ const Featured = ({
           <SectionHeading className="description">{description}</SectionHeading>
           <Box>
             <Link href={link}>
-              <a target="_blank" className="button-space">
+              <a target="_blank" rel="noreferrer" className="button-space">
                 <CustomButton onClick={() => googleAnalytics(title)}>
                   <GlobalIcon class="image" stroke="currentColor" />
                   &nbsp;website
@@ -79,7 +79,7 @@ const Featured = ({
               </a>
             </Link>
             <Link href={githubLink}>
-              <a target="_blank">
+              <a target="_blank" rel="noreferrer">
                 <CustomButton secondary onClick={() => googleAnalytics(title)}>
                   <GithubIcon class="image" stroke="currentColor" />
                   &nbsp;github
