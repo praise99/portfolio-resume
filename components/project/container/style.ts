@@ -192,6 +192,10 @@ const Tag = styled.div`
 const Box = styled.div`
   display: flex;
   align-items: center;
+
+  .button-space {
+    margin-right: 16px;
+  }
 `;
 export {
   ProjectWrapper,

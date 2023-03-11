@@ -13,6 +13,9 @@ import { CustomButton } from "common/buttons";
 import Link from "next/link";
 import Image from "next/image";
 import { gsap, Power2 } from "gsap";
+import { GithubFull, Global } from "assets";
+import { GlobalIcon } from "../assets/global";
+import { GithubIcon } from "../assets/github";
 interface ContainerProps {
   title: string;
   description: string;
@@ -68,16 +71,18 @@ const Featured = ({
           <SectionHeading className="description">{description}</SectionHeading>
           <Box>
             <Link href={link}>
-              <a>
+              <a target="_blank" className="button-space">
                 <CustomButton onClick={() => googleAnalytics(title)}>
-                  website
+                  <GlobalIcon class="image" stroke="currentColor" />
+                  &nbsp;website
                 </CustomButton>
               </a>
             </Link>
             <Link href={githubLink}>
-              <a>
-                <CustomButton onClick={() => googleAnalytics(title)}>
-                  github&nbsp;
+              <a target="_blank">
+                <CustomButton secondary onClick={() => googleAnalytics(title)}>
+                  <GithubIcon class="image" stroke="currentColor" />
+                  &nbsp;github
                 </CustomButton>
               </a>
             </Link>

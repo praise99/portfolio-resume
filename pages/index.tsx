@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
-import { CustomButton } from "common/buttons";
+import Head from "next/head";
 import Landing from "components/landing";
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Praise Portfolio</title>
+      </Head>
       <Landing />
     </>
   );

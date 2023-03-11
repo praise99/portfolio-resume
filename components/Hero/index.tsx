@@ -14,7 +14,8 @@ const Hero = () => {
           <ThirdCard>
             <div className="hero_title">
               <HeadingOneText>
-                The portfolio site to make your friends jealous.
+                Building interactive experiences that translate into immersive
+                digital solutions
               </HeadingOneText>
             </div>
             <div className="hero_description">

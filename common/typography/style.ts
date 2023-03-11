@@ -10,8 +10,8 @@ const HeadingOneText = styled.h1`
   max-width: 800px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: ${({ theme }) => theme.fontSize.x96};
-  line-height: 96px;
+  font-size: 70px;
+  line-height: 75px;
   font-weight: 700;
   letter-spacing: -0.05em;
   @media (max-width: ${({ theme }) => theme.responsive.mb}) {

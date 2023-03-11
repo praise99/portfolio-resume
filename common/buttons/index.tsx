@@ -19,6 +19,7 @@ const CustomButton = styled.button<{
   padding: 12px 20px;
   border: 2px solid #00ffd0;
   text-align: center;
+  align-items: center;
   justify-content: center;
   display: flex;
   cursor: pointer;

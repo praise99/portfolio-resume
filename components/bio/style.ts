@@ -4,7 +4,7 @@ const BioWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 101vh;
+  height: auto;
   @media (max-width: ${({ theme }) => theme.responsive.lg}) {
     flex-direction: column;
     height: auto;
@@ -14,7 +14,7 @@ const BioDescription = styled.div`
   width: 48%;
   height: 100%;
   border-right: 2px solid ${({ theme }) => theme.colors.highlightColor};
-  padding: 50px;
+  padding: 55px;
   @media (max-width: ${({ theme }) => theme.responsive.lg}) {
     width: 100%;
     border-right: none;
@@ -25,7 +25,7 @@ const BioDescription = styled.div`
   }
   .desc {
     margin-bottom: 10px;
-    font-size: ${({ theme }) => theme.fontSize.x20};
+    font-size: ${({ theme }) => theme.fontSize.x18};
     line-height: 28px;
     margin-top: 0;
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
@@ -48,7 +48,6 @@ const BioImage = styled.div`
   .image {
     width: 100%;
     height: 100%;
-    overflow: hidden;
   }
   .layer {
     background-color: ${({ theme }) => theme.colors.backgroundColor};

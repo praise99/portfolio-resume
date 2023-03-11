@@ -26,8 +26,8 @@ export const ProjectData: IProjectData[] = [
     id: 2,
     title: "VERICO WEBSITE",
     description: "A UI website for a fintech company.",
-    link: "https://fandk-dashboard.netlify.app/",
-    githubLink: "",
+    link: "https://getverico.netlify.app/",
+    githubLink: "#",
     projects: ["TYPESCRIPT", "CSS3", "NextJS", "HTML", "Javascript"],
   },
   {
@@ -51,5 +51,13 @@ export const ProjectData: IProjectData[] = [
     githubLink: "https://github.com/praise99/github-profile-clone",
     link: "https://praise-github-clone.netlify.app/",
     projects: ["API", "HTML", "Javascript", "Responsive Design"],
+  },
+  {
+    id: 4,
+    title: "FINTECH DASHBOARD",
+    description: "A UI Dashboard for a fintech company.",
+    githubLink: "#",
+    link: "https://fandk-dashboard.netlify.app/",
+    projects: ["API", "HTML", "Javascript", "TYPESCRIPT", "REACT JS"],
   },
 ];
