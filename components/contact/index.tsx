@@ -28,7 +28,7 @@ const Contact = () => {
         <ContactEmpty></ContactEmpty>
         <ContactForms
           onSubmit={handleSubmit}
-          action="https://formsubmit.co/praiseadeoti99@gmail.com"
+          action="https://formsubmit.co/912014b48c97a7093f3cf3f13aef1e31"
           method="POST"
         >
           <input
