@@ -28,7 +28,7 @@ const fontSize = {
   x20: "20px",
 };
 const responsive = {
-  verySmall: "320px",
+  verySmall: "300px",
   sm: "600px",
   mb: "700px",
   lg: "1100px",

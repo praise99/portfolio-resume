@@ -5,8 +5,19 @@ import Logo from "./jpg/logo.jpg";
 import Picture from "./jpg/picture.jpg";
 import Github from "./svg/github.svg";
 import GithubFull from "./svg/github-full.svg";
-import Global from './svg/global.svg'
+import Global from "./svg/global.svg";
+import Laptop from "./jpg/Laptop-music.png";
+import IphoneMusic from "./jpg/iphone-music.png";
+import ipadVerify from "./jpg/ipad-verify.png";
+import ipadGithub from "./jpg/ipad-github.png";
+import iphoneGithub from "./jpg/iphone-github-clone.png";
+
 export {
+  iphoneGithub,
+  ipadGithub,
+  ipadVerify,
+  Laptop,
+  IphoneMusic,
   Twitter,
   Instagram,
   Linkedin,

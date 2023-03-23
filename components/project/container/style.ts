@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Laptop } from "../../../assets";
 const ProjectWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -54,9 +55,16 @@ const ProjectImage = styled.div`
     color: #00ffd0;
     text-decoration: none;
     background-color: transparent;
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      padding: 0px;
+    }
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      display: none;
+      padding: 0px;
+    }
   }
   .image-container {
-    background-image: url(https://assets.website-files.com/5f384a1ce0be7c5d544cc6e8/5f4fe04bfe3bc862c000c298_Desktop%20Mockup.jpg);
+    background-image: url("/images/Laptop-music.jpg");
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     opacity: 1;
@@ -64,7 +72,7 @@ const ProjectImage = styled.div`
     position: relative;
     z-index: 2;
     overflow: hidden;
-    width: 500px;
+    width: 540px;
     height: 320px;
     margin-right: auto;
     margin-left: auto;
@@ -76,16 +84,14 @@ const ProjectImage = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 24px 0 rgb(0 26 29 / 50%);
-    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
-      width: 100%;
-    }
+
     :hover {
       background-color: #222;
     }
   }
   .inner-image {
     height: auto;
-    width: 484px;
+    width: 100%;
     opacity: 0.7;
     position: absolute;
     left: 0%;
@@ -192,6 +198,9 @@ const Tag = styled.div`
 const Box = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    flex-direction: column;
+  }
 
   .button-space {
     margin-right: 16px;

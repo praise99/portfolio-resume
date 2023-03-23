@@ -14,6 +14,9 @@ const Projects = () => {
             link={item.link}
             projects={item.projects}
             githubLink={item.githubLink}
+            laptopImage={item.laptopImage}
+            mobileImage={item.mobileImage}
+            ipadImage={item.ipadImage}
           />
         );
       })}

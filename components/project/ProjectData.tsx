@@ -1,3 +1,9 @@
+import {
+  IphoneMusic,
+  iphoneGithub,
+  ipadGithub,
+  ipadVerify,
+} from "../../assets";
 interface IProjectData {
   id: number;
   title: string;
@@ -5,6 +11,9 @@ interface IProjectData {
   link: string;
   projects: string[];
   githubLink: string;
+  laptopImage: string;
+  mobileImage: any;
+  ipadImage: any;
 }
 
 export const ProjectData: IProjectData[] = [
@@ -21,6 +30,9 @@ export const ProjectData: IProjectData[] = [
       "TYPESCRIPT",
       "Responsive Design",
     ],
+    laptopImage: "/images/Laptop-music.jpg",
+    mobileImage: IphoneMusic,
+    ipadImage: IphoneMusic,
   },
   {
     id: 2,
@@ -29,6 +41,9 @@ export const ProjectData: IProjectData[] = [
     link: "https://getverico.netlify.app/",
     githubLink: "#",
     projects: ["TYPESCRIPT", "CSS3", "NextJS", "HTML", "Javascript"],
+    laptopImage: "/images/laptop-verico.jpg",
+    mobileImage: IphoneMusic,
+    ipadImage: IphoneMusic,
   },
   {
     id: 3,
@@ -43,6 +58,9 @@ export const ProjectData: IProjectData[] = [
       "Javascript",
       "Responsive Design",
     ],
+    laptopImage: "/images/laptop-verification.jpg",
+    mobileImage: IphoneMusic,
+    ipadImage: ipadVerify,
   },
   {
     id: 4,
@@ -51,5 +69,8 @@ export const ProjectData: IProjectData[] = [
     githubLink: "https://github.com/praise99/github-profile-clone",
     link: "https://praise-github-clone.netlify.app/",
     projects: ["API", "HTML", "Javascript", "Responsive Design"],
+    laptopImage: "/images/laptop-github.jpg",
+    mobileImage: iphoneGithub,
+    ipadImage: ipadGithub,
   },
 ];
