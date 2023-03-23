@@ -23,6 +23,9 @@ const BioDescription = styled.div`
     padding: 15px;
     margin-bottom: 30px;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    padding: 10px;
+  }
   .desc {
     margin-bottom: 10px;
     font-size: ${({ theme }) => theme.fontSize.x18};
@@ -31,6 +34,10 @@ const BioDescription = styled.div`
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
       font-size: ${({ theme }) => theme.fontSize.x16};
       line-height: 24px;
+    }
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      font-size: ${({ theme }) => theme.fontSize.x14};
+      line-height: 20px;
     }
   }
 `;

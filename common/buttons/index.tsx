@@ -31,6 +31,9 @@ const CustomButton = styled.button<{
     padding: 2px 10px;
     font-size: 12px;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    width: 100%;
+  }
 `;
 const Button = ({ children }: buttonProps) => {
   return <Button secondary>{children}</Button>;

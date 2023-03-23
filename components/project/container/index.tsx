@@ -118,7 +118,7 @@ const Featured = ({
             </Link>
             {githubLink !== "#" && (
               <Link href={githubLink}>
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="noreferrer" className="button-space2">
                   <CustomButton
                     secondary
                     onClick={() => googleAnalytics(title)}

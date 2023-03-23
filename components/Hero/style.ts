@@ -44,6 +44,9 @@ const ThirdCard = styled.div`
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
       padding: 44px 15px;
     }
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      padding: 44px 10px;
+    }
   }
   .hero_description {
     width: 23.7%;

@@ -19,6 +19,9 @@ const HeadingOneText = styled.h1`
     line-height: 32px;
     text-align: center;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    font-size: ${({ theme }) => theme.fontSize.x24};
+  }
 `;
 
 const HeadingTwoText = styled.h2`
@@ -33,6 +36,10 @@ const HeadingTwoText = styled.h2`
     font-size: ${({ theme }) => theme.fontSize.x24};
     line-height: 32px;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    font-size: ${({ theme }) => theme.fontSize.x20};
+    line-height: 24px;
+  }
 `;
 
 const HeadingThreeText = styled.h3`
@@ -43,6 +50,9 @@ const HeadingThreeText = styled.h3`
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 36px;
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    font-size: ${({ theme }) => theme.fontSize.x20};
+  }
 `;
 
 const HeadingFourText = styled.h4`
@@ -83,6 +93,10 @@ const SectionHeading = styled.p`
   line-height: 24px;
   font-weight: 400;
   font-size: ${({ theme }) => theme.fontSize.x12};
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    font-size: ${({ theme }) => theme.fontSize.x16};
+    line-height: 20px;
+  }
 `;
 
 export {

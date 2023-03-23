@@ -18,6 +18,9 @@ const ProjectDescription = styled.div`
   @media (max-width: ${({ theme }) => theme.responsive.mb}) {
     padding: 20px;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    padding: 10px;
+  }
   .description {
     max-width: 100%;
     margin-bottom: 40px;
@@ -26,6 +29,10 @@ const ProjectDescription = styled.div`
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
       font-size: ${({ theme }) => theme.fontSize.x16};
       line-height: 24px;
+    }
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      font-size: ${({ theme }) => theme.fontSize.x14};
+      line-height: 20px;
     }
   }
 `;
@@ -160,6 +167,9 @@ const ProjectImage = styled.div`
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+    @media (max-width: ${({ theme }) => theme.responsive.small}) {
+      right: 14px;
+    }
   }
   .second-image {
     opacity: 1;
@@ -174,6 +184,9 @@ const ProjectImage = styled.div`
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+    @media (max-width: ${({ theme }) => theme.responsive.small}) {
+      right: 180px;
+    }
   }
 `;
 const TagFolder = styled.div`
@@ -204,6 +217,16 @@ const Box = styled.div`
 
   .button-space {
     margin-right: 16px;
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+  .button-space2 {
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 `;
 export {

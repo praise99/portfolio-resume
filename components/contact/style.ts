@@ -30,6 +30,9 @@ const ContactForms = styled.form`
   @media (max-width: ${({ theme }) => theme.responsive.mb}) {
     padding: 20px;
   }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    padding: 10px;
+  }
   .title {
     margin-top: 0px;
     margin-bottom: 24px;
@@ -43,6 +46,9 @@ const ContactInformation = styled.div`
   @media (max-width: ${({ theme }) => theme.responsive.lg}) {
     width: 100%;
     border-left: none;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+    padding: 10px;
   }
   .image {
     border-radius: 50%;
@@ -69,6 +75,9 @@ const ContactInformation = styled.div`
     line-height: 28px;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      font-size: ${({ theme }) => theme.fontSize.x16};
+    }
     a {
       text-decoration: underline;
     }
