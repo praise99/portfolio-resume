@@ -3,6 +3,11 @@ import {
   iphoneGithub,
   ipadGithub,
   ipadVerify,
+  iphoneVerify,
+  iphoneVerico,
+  ipadVerico,
+  ipadMusic,
+  ipadVerifyTest,
 } from "../../assets";
 interface IProjectData {
   id: number;
@@ -32,7 +37,7 @@ export const ProjectData: IProjectData[] = [
     ],
     laptopImage: "/images/Laptop-music.jpg",
     mobileImage: IphoneMusic,
-    ipadImage: IphoneMusic,
+    ipadImage: ipadMusic,
   },
   {
     id: 2,
@@ -42,10 +47,10 @@ export const ProjectData: IProjectData[] = [
     githubLink: "#",
     projects: ["TYPESCRIPT", "CSS3", "NextJS", "HTML", "Javascript"],
     laptopImage: "/images/laptop-verico.jpg",
+    mobileImage: iphoneVerico,
+    ipadImage: ipadVerico,
     // mobileImage: IphoneMusic,
     // ipadImage: IphoneMusic,
-    mobileImage: IphoneMusic,
-    ipadImage: IphoneMusic,
   },
   {
     id: 3,
@@ -61,10 +66,10 @@ export const ProjectData: IProjectData[] = [
       "Responsive Design",
     ],
     laptopImage: "/images/laptop-verification.jpg",
+    mobileImage: iphoneVerify,
+    ipadImage: ipadVerify,
     // mobileImage: IphoneMusic,
-    // ipadImage: ipadVerify,
-    mobileImage: IphoneMusic,
-    ipadImage: IphoneMusic,
+    // ipadImage: IphoneMusic,
   },
   {
     id: 4,
@@ -74,9 +79,9 @@ export const ProjectData: IProjectData[] = [
     link: "https://praise-github-clone.netlify.app/",
     projects: ["API", "HTML", "Javascript", "Responsive Design"],
     laptopImage: "/images/laptop-github.jpg",
-    // mobileImage: iphoneGithub,
-    // ipadImage: ipadGithub,
-    mobileImage: IphoneMusic,
-    ipadImage: IphoneMusic,
+    mobileImage: iphoneGithub,
+    ipadImage: ipadGithub,
+    // mobileImage: IphoneMusic,
+    // ipadImage: IphoneMusic,
   },
 ];

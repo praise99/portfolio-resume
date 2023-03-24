@@ -10,9 +10,19 @@ import Laptop from "./jpg/Laptop-music.png";
 import IphoneMusic from "./jpg/iphone-music.png";
 import ipadVerify from "./jpg/ipad-verify.png";
 import ipadGithub from "./jpg/ipad-github.png";
-import iphoneGithub from "./jpg/iphone-github-clone.png";
+import iphoneGithub from "./jpg/iphone-github.png";
+import iphoneVerify from "./jpg/iphone-verify.png";
+import iphoneVerico from "./jpg/iphone-verico.png";
+import ipadVerico from "./jpg/ipad-verico.png";
+import ipadMusic from "./jpg/ipad-music.png";
+import ipadVerifyTest from "./jpg/ipad-verify (6).png";
 
 export {
+  ipadVerifyTest,
+  ipadMusic,
+  ipadVerico,
+  iphoneVerico,
+  iphoneVerify,
   iphoneGithub,
   ipadGithub,
   ipadVerify,

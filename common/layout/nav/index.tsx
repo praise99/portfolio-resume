@@ -26,13 +26,9 @@ const Nav = () => {
     <Wrapper>
       <NavWrapper className={`navbar ${stickyClass}`}>
         <Name>
-          <Link href="#">
-            <a>
-              <HeadingTwoText className="name">
-                PRAISE ADEOTI <span className="span">| FRONTEND ENGINEER</span>
-              </HeadingTwoText>
-            </a>
-          </Link>
+          <HeadingTwoText className="name">
+            PRAISE ADEOTI <span className="span">| FRONTEND ENGINEER</span>
+          </HeadingTwoText>
         </Name>
         <ImageContainer className={`${hidden}`}>
           <Links />

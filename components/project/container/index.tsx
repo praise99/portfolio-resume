@@ -139,8 +139,8 @@ const Featured = ({
           </TagFolder>
         </ProjectDescription>
         <ProjectImage>
-          <Link href="#">
-            <a className="image-link">
+          <Link href={link}>
+            <a target="_blank" className="image-link">
               <ImageContainer laptopImage={laptopImage}>
                 <div className="inner-image"></div>
                 <div className="image-overlay">
