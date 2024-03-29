@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components";
 import { themes } from "themes/theme";
 import { GlobalStyle } from "themes/GlobalStyle";
 import "../themes/style.css";
-import Layout from "common/layout";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -34,9 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <ThemeProvider theme={themes}>
         <GlobalStyle />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );

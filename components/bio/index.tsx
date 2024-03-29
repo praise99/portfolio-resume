@@ -56,7 +56,7 @@ const Bio = () => {
           </SectionHeading>
           <br />
 
-          <Link href="https://drive.google.com/file/d/1lVSDuiyJ3mCBnRd79DzY6ACMIC-T0foX/view?usp=sharing">
+          <Link href="https://drive.google.com/file/d/18V_Q-pfjS7tTLD5wqTSbQbvpDozUC8e_/view?usp=sharing">
             <a target="_blank" rel="noreferrer">
               <CustomButton>download resume</CustomButton>
             </a>

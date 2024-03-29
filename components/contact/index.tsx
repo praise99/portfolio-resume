@@ -14,30 +14,48 @@ import { HeadingThreeText, SectionHeading } from "common/typography/style";
 import Links from "common/social-links";
 import { Logo } from "assets";
 import { Spinner, GeneralSpinner } from "common/spinner";
+import * as emailjs from "emailjs-com";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const handleSubmit = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
     setLoading(true);
-    setTimeout(function () {
-      setLoading(false);
-    }, 2000); //wait 2 seconds
+    const templateParams = {
+      from_name: email,
+      user_name: name,
+      to_name: "padeoti99@gmail.com",
+      message: message,
+    };
+    emailjs
+      .send(
+        "service_zf7dv1d",
+        "template_ffd3958",
+        templateParams,
+        "tsfN_i7jzAZ6vEZjH"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setEmail("");
+          setMessage("");
+          setName("");
+          setLoading(false);
+        },
+        (error) => {
+          console.log(error.text);
+          setLoading(false);
+        }
+      );
   };
+
   return (
     <Container title="hire praise" id="hire">
       <ContactWrapper>
         <ContactEmpty></ContactEmpty>
-        <ContactForms
-          onSubmit={handleSubmit}
-          action="https://formsubmit.co/912014b48c97a7093f3cf3f13aef1e31"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="PORTFOLIO SUBMISSION"
-          ></input>
-          <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name="_template" value="table"></input>
+        <ContactForms onSubmit={handleSubmit}>
           <HeadingThreeText className="title">Contact Form</HeadingThreeText>
           <FormGroup>
             <label htmlFor="name">name</label>
@@ -45,6 +63,8 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               required
             />
           </FormGroup>
@@ -54,6 +74,8 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </FormGroup>
@@ -62,6 +84,8 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             />
           </FormGroup>

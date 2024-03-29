@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  body{
+  .main-container{
     margin:0;
     overflow-x:hidden ;
     scroll-behavior: smooth;
@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
       padding:10px;
     }
-  
   }
   html{
   scroll-behavior: smooth;
