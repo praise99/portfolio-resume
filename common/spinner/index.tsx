@@ -13,7 +13,7 @@ const Spin = styled.h6`
   height: 20px;
   border-radius: 50%;
   border: 4px solid transparent;
-  border-top-color: #005963;
+  border-top-color: #00ffd0;
   animation: spin 1s linear infinite;
   -webkit-animation: spin 1s linear infinite;
 

@@ -43,12 +43,21 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setLoading(false);
+          resetFormData();
         },
         (error) => {
           console.log(error.text);
           setLoading(false);
         }
       );
+  };
+
+  const resetFormData = () => {
+    setFormdata({
+      email: "",
+      name: "",
+      message: "",
+    });
   };
   const handleChange = (e: any) => {
     setFormdata({
@@ -95,7 +104,13 @@ const Contact = () => {
               required
             />
           </FormGroup>
-          <CustomButton>{loading ? <Spinner /> : "Submit"}</CustomButton>
+          <CustomButton
+            disabled={
+              loading || !formData.name || !formData.email || !formData.message
+            }
+          >
+            {loading ? <Spinner /> : "Submit"}
+          </CustomButton>
         </ContactForms>
         <ContactInformation>
           <div className="linking">
