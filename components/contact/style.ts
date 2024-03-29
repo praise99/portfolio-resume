@@ -5,7 +5,9 @@ const ContactWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 101vh;
-
+  .disabled {
+    cursor: not-allowed;
+  }
   @media (max-width: ${({ theme }) => theme.responsive.lg}) {
     flex-direction: column;
     height: auto;

@@ -22,6 +22,20 @@ const HeadingOneText = styled.h1`
   @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
     font-size: ${({ theme }) => theme.fontSize.x24};
   }
+  .reveal-text {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 75px;
+    color: #d1d1d6;
+    @media (max-width: ${({ theme }) => theme.responsive.mb}) {
+      font-size: ${({ theme }) => theme.fontSize.x32};
+      line-height: 32px;
+      text-align: center;
+    }
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      font-size: ${({ theme }) => theme.fontSize.x24};
+    }
+  }
 `;
 
 const HeadingTwoText = styled.h2`
@@ -96,6 +110,16 @@ const SectionHeading = styled.p`
   @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
     font-size: ${({ theme }) => theme.fontSize.x16};
     line-height: 20px;
+  }
+  .reveal-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #d1d1d6;
+    @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
+      font-size: ${({ theme }) => theme.fontSize.x16};
+      line-height: 20px;
+    }
   }
 `;
 

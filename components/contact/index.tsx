@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Container from "common/container";
 import {
   ContactWrapper,
@@ -13,42 +13,57 @@ import { CustomButton } from "common/buttons";
 import { HeadingThreeText, SectionHeading } from "common/typography/style";
 import Links from "common/social-links";
 import { Logo } from "assets";
-import { Spinner, GeneralSpinner } from "common/spinner";
+import { Spinner } from "common/spinner";
 import * as emailjs from "emailjs-com";
+import { contactInformation } from "config/config";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormdata] = useState({
+    email: "",
+    name: "",
+    message: "",
+  });
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setLoading(true);
     const templateParams = {
-      from_name: email,
-      user_name: name,
-      to_name: "padeoti99@gmail.com",
-      message: message,
+      from_name: formData.email,
+      user_name: formData.name,
+      to_name: contactInformation.EMAIL_ADDRESS,
+      message: formData.message,
     };
     emailjs
       .send(
-        "service_zf7dv1d",
-        "template_ffd3958",
+        contactInformation.SERVICE_ID,
+        contactInformation.TEMPLATE_ID,
         templateParams,
-        "tsfN_i7jzAZ6vEZjH"
+        contactInformation.CONFIG_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
-          setEmail("");
-          setMessage("");
-          setName("");
           setLoading(false);
+          resetFormData();
         },
         (error) => {
           console.log(error.text);
           setLoading(false);
         }
       );
+  };
+
+  const resetFormData = () => {
+    setFormdata({
+      email: "",
+      name: "",
+      message: "",
+    });
+  };
+  const handleChange = (e: any) => {
+    setFormdata({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   return (
@@ -63,9 +78,9 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
               required
+              value={formData.name || ""}
+              onChange={handleChange}
             />
           </FormGroup>
           <FormGroup>
@@ -74,8 +89,8 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formData.email || ""}
+              onChange={handleChange}
               required
             />
           </FormGroup>
@@ -84,12 +99,18 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={formData.message}
+              onChange={handleChange}
               required
             />
           </FormGroup>
-          <CustomButton>{loading ? <Spinner /> : "Submit"}</CustomButton>
+          <CustomButton
+            disabled={
+              loading || !formData.name || !formData.email || !formData.message
+            }
+          >
+            {loading ? <Spinner /> : "Submit"}
+          </CustomButton>
         </ContactForms>
         <ContactInformation>
           <div className="linking">

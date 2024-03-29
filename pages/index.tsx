@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 const Home: NextPage = () => {
   const [counter, setCounter] = useState(0);
   const counterElement = useRef<HTMLHeadingElement | null>(null);
+  const counterNewElement = useRef<HTMLHeadingElement | null>(null);
   let currentValue = 0;
   useEffect(() => {
     const updateCounter = () => {
@@ -58,15 +59,11 @@ const Home: NextPage = () => {
       opacity: 0,
       display: "none",
     });
-
-    // gsap.to(".overlay", 5.5, {
-    //   display: "block",
-    //   background: "#000000",
-    //   onComplete: () => {
-    //     const overlay = document.querySelector(".overlay") as HTMLElement;
-    //     overlay.style.display = "none";
-    //   },
-    // });
+    gsap.to(counterNewElement.current, 0.25, {
+      delay: 5.5,
+      opacity: 0,
+      display: "none",
+    });
     gsap.to(".bar", 1.5, {
       delay: 3.5,
       height: 0,
@@ -90,8 +87,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Praise&apos;s Portfolio</title>
       </Head>
-
-      <div>
+      <div ref={counterNewElement}>
         <h1 className="counter" ref={counterElement}>
           {counter}
         </h1>
