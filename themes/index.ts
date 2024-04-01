@@ -41,5 +41,7 @@ const responsive = {
 
 const fontFamily = {
   Lato: "Lato, sans-serif",
+  Inter: "Inter, sans-serif",
+  Geist: "Geist, sans-serif",
 };
 export { colors, fontSize, responsive, fontFamily };

@@ -24,6 +24,25 @@ interface IProjectData {
 export const ProjectData: IProjectData[] = [
   {
     id: 1,
+    title: "myresumAI",
+    description:
+      "Helping you put your best foot forward with aprofessionally curated application, increasing your chances of being hired.",
+    link: "https://myresumai.xyz/",
+    githubLink: "#",
+    projects: [
+      "REACT JS",
+      "CONTEXT API",
+      "STYLED COMPONENTS",
+      "TYPESCRIPT",
+      "Responsive Design",
+      "ANT DESIGN",
+    ],
+    laptopImage: "/images/Laptop-music.jpg",
+    mobileImage: IphoneMusic,
+    ipadImage: ipadMusic,
+  },
+  {
+    id: 2,
     title: "MUSIC APP",
     description: "A music app to play my favorite songs and albums",
     link: "https://praise-musica.netlify.app/",
@@ -40,7 +59,7 @@ export const ProjectData: IProjectData[] = [
     ipadImage: ipadMusic,
   },
   {
-    id: 2,
+    id: 3,
     title: "VERICO WEBSITE",
     description: "A UI website for a fintech company.",
     link: "https://getverico.netlify.app/",
@@ -53,7 +72,7 @@ export const ProjectData: IProjectData[] = [
     // ipadImage: IphoneMusic,
   },
   {
-    id: 3,
+    id: 4,
     title: "VERIFICATION PAGE",
     description: "Verification UI for a online Business.",
     githubLink: "https://github.com/praise99/react-task",
@@ -72,7 +91,7 @@ export const ProjectData: IProjectData[] = [
     // ipadImage: IphoneMusic,
   },
   {
-    id: 4,
+    id: 5,
     title: "GITHUB CLONE",
     description: "A Clone of users Github profile page",
     githubLink: "https://github.com/praise99/github-profile-clone",
