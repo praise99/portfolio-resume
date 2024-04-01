@@ -73,7 +73,7 @@ const ContactInformation = styled.div`
   }
   .name {
     margin-bottom: 10px;
-    font-size: ${({ theme }) => theme.fontSize.x20};
+    font-size: ${({ theme }) => theme.fontSize.x16};
     line-height: 28px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -117,6 +117,7 @@ const FormGroup = styled.div`
       /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: ${({ theme }) => theme.colors.highlightColor};
       opacity: 1; /* Firefox */
+      font-size: 14px;
     }
 
     :-ms-input-placeholder {

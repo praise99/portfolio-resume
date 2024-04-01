@@ -25,7 +25,7 @@ const ProjectDescription = styled.div`
     max-width: 100%;
     margin-bottom: 40px;
     line-height: 28px;
-    font-size: ${({ theme }) => theme.fontSize.x20};
+    font-size: ${({ theme }) => theme.fontSize.x14};
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
       font-size: ${({ theme }) => theme.fontSize.x16};
       line-height: 24px;

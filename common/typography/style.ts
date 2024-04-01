@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const fontStyle = css`
-  font-family: ${({ theme }) => theme.fontFamily.Lato};
+  font-family: ${({ theme }) => theme.fontFamily.Geist};
   font-style: normal;
   color: ${({ theme }) => theme.colors.highlightColor};
 `;
@@ -10,7 +10,7 @@ const HeadingOneText = styled.h1`
   max-width: 800px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 70px;
+  font-size: 64px;
   line-height: 75px;
   font-weight: 700;
   letter-spacing: -0.05em;
@@ -24,7 +24,7 @@ const HeadingOneText = styled.h1`
   }
   .reveal-text {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 64px;
     line-height: 75px;
     color: #d1d1d6;
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {
@@ -42,9 +42,9 @@ const HeadingTwoText = styled.h2`
   ${fontStyle}
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: ${({ theme }) => theme.fontSize.x40};
+  font-size: ${({ theme }) => theme.fontSize.x32};
   font-weight: 700;
-  line-height: 48px;
+  line-height: 32px;
   font-weight: 700;
   @media (max-width: ${({ theme }) => theme.responsive.mb}) {
     font-size: ${({ theme }) => theme.fontSize.x24};
@@ -113,11 +113,11 @@ const SectionHeading = styled.p`
   }
   .reveal-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #d1d1d6;
     @media (max-width: ${({ theme }) => theme.responsive.verySmall}) {
-      font-size: ${({ theme }) => theme.fontSize.x16};
+      font-size: ${({ theme }) => theme.fontSize.x14};
       line-height: 20px;
     }
   }

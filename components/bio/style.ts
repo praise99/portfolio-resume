@@ -28,7 +28,7 @@ const BioDescription = styled.div`
   }
   .desc {
     margin-bottom: 10px;
-    font-size: ${({ theme }) => theme.fontSize.x18};
+    font-size: ${({ theme }) => theme.fontSize.x14};
     line-height: 28px;
     margin-top: 0;
     @media (max-width: ${({ theme }) => theme.responsive.mb}) {

@@ -70,7 +70,7 @@ const Bio = () => {
 
           <Link href="https://drive.google.com/file/d/1MkcoLW1vzdm35Nkq3ltS5b9ZNKf0yyMB/view?usp=sharing">
             <a target="_blank" rel="noreferrer">
-              <CustomButton>download resume</CustomButton>
+              <CustomButton>view resume</CustomButton>
             </a>
           </Link>
         </BioDescription>
