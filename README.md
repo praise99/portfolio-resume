@@ -1,5 +1,5 @@
 # portfolio-resume
-https://portfolio-resume-praise.netlify.app/
+https://oluwabukunmi.xyz/
 
 My portfolio website
 
