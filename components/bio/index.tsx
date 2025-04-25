@@ -10,7 +10,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Bio = () => {
   const firstInformation =
-    "Hi, I'm Praise Adeoti, a passionate frontend engineer with over 3 years of experience creating stunning websites and web applications. I specialize in programming languages like HTML, CSS, JavaScript, ReactJS, Typescript and NextJS and I'm always exploring new frameworks and tools to stay ahead of the curve.";
+    "Hi, I'm Praise Adeoti, a passionate frontend engineer with over 4 years of experience creating stunning websites and web applications. I specialize in programming languages like HTML, CSS, JavaScript, ReactJS, Typescript and NextJS and I'm always exploring new frameworks and tools to stay ahead of the curve.";
   const secondInformation =
     "In my free time, you'll find me tinkering with new web development projects and experimenting with design. I love finding creative solutions to complex problems and turning ideas into interactive experiences that engage and delight users.";
   const thirdInformation =
