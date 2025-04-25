@@ -138,34 +138,36 @@ const Featured = ({
             })}
           </TagFolder>
         </ProjectDescription>
-        <ProjectImage>
-          <Link href={link}>
-            <a target="_blank" className="image-link">
-              <ImageContainer laptopImage={laptopImage}>
-                <div className="inner-image"></div>
-                <div className="image-overlay">
-                  <div className="inner-overlay-view"></div>
+        {laptopImage && (
+          <ProjectImage>
+            <Link href={link}>
+              <a target="_blank" className="image-link">
+                <ImageContainer laptopImage={laptopImage}>
+                  <div className="inner-image"></div>
+                  <div className="image-overlay">
+                    <div className="inner-overlay-view"></div>
+                  </div>
+                </ImageContainer>
+                {/* <div className="first-image">
+                  <Image
+                    src={ipadImage}
+                    alt="project-image"
+                    width={200}
+                    height={259}
+                  />
                 </div>
-              </ImageContainer>
-              <div className="first-image">
-                <Image
-                  src={ipadImage}
-                  alt="project-image"
-                  width={200}
-                  height={259}
-                />
-              </div>
-              <div className="second-image">
-                <Image
-                  src={mobileImage}
-                  alt="project-image"
-                  width={100}
-                  height={196}
-                />
-              </div>
-            </a>
-          </Link>
-        </ProjectImage>
+                <div className="second-image">
+                  <Image
+                    src={mobileImage}
+                    alt="project-image"
+                    width={100}
+                    height={196}
+                  />
+                </div> */}
+              </a>
+            </Link>
+          </ProjectImage>
+        )}
       </ProjectWrapper>
     </Container>
   );

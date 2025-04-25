@@ -16,7 +16,7 @@ interface IProjectData {
   link: string;
   projects: string[];
   githubLink: string;
-  laptopImage: string;
+  laptopImage: any;
   mobileImage: any;
   ipadImage: any;
 }
@@ -24,22 +24,35 @@ interface IProjectData {
 export const ProjectData: IProjectData[] = [
   {
     id: 1,
-    title: "myresumAI",
+    title: "SAMPHES SERVICES",
     description:
-      "Helping you put your best foot forward with aprofessionally curated application, increasing your chances of being hired.",
-    link: "https://myresumai.xyz/",
+      "A comprehensive e-commerce platform specializing in premium beauty products and cosmetics. The store offers both wholesale and retail options with a user-friendly interface for browsing, purchasing, and tracking orders.",
+    link: "https://samphesservices.com/",
     githubLink: "#",
     projects: [
-      "REACT JS",
+      "NEXT JS",
       "CONTEXT API",
-      "STYLED COMPONENTS",
       "TYPESCRIPT",
       "Responsive Design",
-      "ANT DESIGN",
+      "Tailwind CSS",
     ],
-    laptopImage: "/images/Laptop-music.jpg",
+    laptopImage: "/images/samphes.png",
     mobileImage: IphoneMusic,
     ipadImage: ipadMusic,
+  },
+  {
+    id: 3,
+    title: "BRIGHTWAY MICROFINANCE",
+    description:
+      "A modern financial services platform for a microfinance bank providing accessible banking solutions to individuals and small businesses. The website features loan application services, account management tools, and financial education resources to empower local communities.",
+    link: "https://brightwaymfb.com",
+    githubLink: "#",
+    projects: ["TYPESCRIPT", "Tailwind CSS", "NextJS", "HTML", "Javascript"],
+    laptopImage: "/images/bmfb.png",
+    mobileImage: iphoneVerico,
+    ipadImage: ipadVerico,
+    // mobileImage: IphoneMusic,
+    // ipadImage: IphoneMusic,
   },
   {
     id: 2,
@@ -58,19 +71,7 @@ export const ProjectData: IProjectData[] = [
     mobileImage: IphoneMusic,
     ipadImage: ipadMusic,
   },
-  {
-    id: 3,
-    title: "VERICO WEBSITE",
-    description: "A UI website for a fintech company.",
-    link: "https://getverico.netlify.app/",
-    githubLink: "#",
-    projects: ["TYPESCRIPT", "CSS3", "NextJS", "HTML", "Javascript"],
-    laptopImage: "/images/laptop-verico.jpg",
-    mobileImage: iphoneVerico,
-    ipadImage: ipadVerico,
-    // mobileImage: IphoneMusic,
-    // ipadImage: IphoneMusic,
-  },
+
   {
     id: 4,
     title: "VERIFICATION PAGE",

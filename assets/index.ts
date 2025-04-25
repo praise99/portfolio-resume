@@ -16,7 +16,6 @@ import iphoneVerico from "./jpg/iphone-verico.png";
 import ipadVerico from "./jpg/ipad-verico.png";
 import ipadMusic from "./jpg/ipad-music.png";
 import ipadVerifyTest from "./jpg/ipad-verify (6).png";
-
 export {
   ipadVerifyTest,
   ipadMusic,
