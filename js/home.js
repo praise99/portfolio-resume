@@ -84,7 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (d.CONNECT.length) {
         var html = '<section class="fade-in"><h2>Connect</h2><div class="connect-links">';
         d.CONNECT.forEach(function (c) {
-            html += '<a href="' + c.href + '">' + c.text + '</a>';
+            var attrs = 'href="' + c.href + '"';
+            if (c.target) {
+                attrs += ' target="' + c.target + '" rel="noopener noreferrer"';
+            }
+            html += '<a ' + attrs + '>' + c.text + '</a>';
         });
         html += '</div></section>';
         container.innerHTML += html;
