@@ -1,14 +1,5 @@
-/* Theme Toggle — shared across pages */
+/* Theme Toggle — shared across pages (initial theme set in head inline script for no flash) */
 (function () {
-    try {
-        var saved = localStorage.getItem('theme-portfolio');
-        if (saved) {
-            document.documentElement.setAttribute('data-theme', saved);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-    } catch (e) {}
-
     document.addEventListener('DOMContentLoaded', function () {
         var btn = document.getElementById('theme-toggle-btn');
         if (btn) {

@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects — Nkwachi Nwachukwu</title>
+    <script>
+      (function(){
+        try {
+          var s = localStorage.getItem('theme-portfolio');
+          if (s) document.documentElement.setAttribute('data-theme', s);
+          else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.setAttribute('data-theme', 'dark');
+        } catch(e) {}
+      })();
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/projects.css">
 </head>
