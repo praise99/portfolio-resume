@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Nkwachi Nwachukwu</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <span>Theme</span>
+        <div class="toggle-track" id="theme-toggle-btn" role="button" aria-label="Toggle dark mode">
+            <div class="toggle-thumb"></div>
+        </div>
+    </div>
+
+    <!-- README Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-filename">
+                    <span class="icon">&#9656;</span>
+                    <span id="modal-title">README.md</span>
+                </div>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body md" id="modal-content"></div>
+        </div>
+    </div>
+
+    <div class="container" id="content"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
