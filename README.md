@@ -1,39 +1,93 @@
-# portfolio-resume
-https://oluwabukunmi.xyz/
+# Portfolio Website
 
-My portfolio website
+A minimal, data-driven portfolio site with light/dark theme support.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Structure
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+```
+portfolio/
+├── index.html          ← Home page
+├── projects.html       ← Projects list page
+├── css/
+│   ├── home.css        ← Home page styles (editorial)
+│   └── projects.css    ← Projects page styles (technical)
+└── js/
+    ├── data.js         ← ✏️  ALL CONTENT LIVES HERE
+    ├── theme.js        ← Theme toggle (shared)
+    ├── home.js         ← Home page renderer
+    └── projects.js     ← Projects page renderer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Update Content
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**All content is in `js/data.js`.** Open it and edit the arrays/objects.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Add a new project
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Add an entry to the `PROJECTS` array:
 
-## Learn More
+```js
+{
+    name: "My New Project",
+    label: "Backend",
+    status: "lab",              // "lab" | "live" | "complete"
+    tags: ["Go", "Redis"],
+    desc: "A short description...",
+    featured: true,             // true = shows on home page
+    actions: [
+        { text: "README.md", type: "readme" },
+        { text: "View on GitHub", href: "https://github.com/..." }
+    ],
+    readme: '<h3>Overview</h3><p>...</p>'  // HTML for the README modal
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Add new writing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add an entry to the `WRITING` array:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+{
+    label: "Essay",
+    title: "My New Essay",
+    desc: "A short teaser...",
+    href: "https://substack.com/..."
+}
+```
 
-## Deploy on Vercel
+### Add experience
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Add to the `EXPERIENCE` array:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```js
+{
+    title: "Software Engineer",
+    company: "Company Name",
+    desc: "What I did...",
+    href: "https://company.com"
+}
+```
+
+### Update connect links
+
+Edit the `CONNECT` array in `data.js`.
+
+## Running Locally
+
+Just open `index.html` in a browser. No build step, no dependencies.
+
+Or use a local server:
+
+```bash
+# Python
+python3 -m http.server 8000
+
+# Node
+npx serve .
+```
+
+## Deployment
+
+Works on any static host: GitHub Pages, Netlify, Vercel, Cloudflare Pages.
+
+Just push the folder — no build step needed.
