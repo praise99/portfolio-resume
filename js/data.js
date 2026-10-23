@@ -121,10 +121,10 @@ var SITE_DATA = {
 
   // ── EDUCATION ────────────────────────────────────────
   EDUCATION: {
-    degree: "B.Sc. (Hons) Petroleum Engineering",
-    distinction: "Aug 2016 – Jan 2023",
+    degree: "B.Sc. (Hons) Computer Science",
+    distinction: "Aug 2017 – Jan 2022",
     school: "University of Ibadan, Nigeria",
-    desc: "Transitioned into software engineering in 2020 through certifications, bootcamps, and hands-on internships (Google Developer Certificate, CS50, Tech Bootcamps).",
+    desc: "Relevant Coursework: Software Analysis and Design, Software Development, Database Design and Development, Web Application Development",
   },
 
   // ── CONNECT ──────────────────────────────────────────
