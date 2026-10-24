@@ -17,7 +17,7 @@ var SITE_DATA = {
     name: "Praise Adeoti",
     subtitle: "Frontend Engineer",
     intro:
-      "Frontend Engineer with over 4 years of experience designing and developing scalable web applications and AI-powered platforms using React, Next.js, and TypeScript. Proven track record of delivering high-performance solutions adopted by millions of users globally, including AI products at AskYourPDF reaching over 6M users. Skilled in building scalable frontend systems, enhancing user engagement, and leading technical initiatives that drive measurable business impact.",
+      "Frontend engineer with 5+ years of experience building production web applications using React, Next.js, and TypeScript across fintech, AI, government, and SaaS. Currently building AI products at AskYourPDF, serving a 6M+ user base across its products. Founding frontend engineer at Collectiva, a cooperative management platform that has processed $1.5M+ in transactions. Experienced in frontend architecture, performance optimization, product development, and leading frontend teams. Active contributor to open-source React and TypeScript projects.",
     copyright: "© " + new Date().getFullYear() + " Praise Adeoti",
     tagline:
       "Designed by conversation — built entirely by prompting Claude, zero lines of code written by me.",
@@ -121,10 +121,10 @@ var SITE_DATA = {
 
   // ── EDUCATION ────────────────────────────────────────
   EDUCATION: {
-    degree: "B.Sc. (Hons) Petroleum Engineering",
-    distinction: "Aug 2016 – Jan 2023",
+    degree: "B.Sc. (Hons) Computer Science",
+    distinction: "Aug 2017 – Jan 2022",
     school: "University of Ibadan, Nigeria",
-    desc: "Transitioned into software engineering in 2020 through certifications, bootcamps, and hands-on internships (Google Developer Certificate, CS50, Tech Bootcamps).",
+    desc: "Relevant Coursework: Software Analysis and Design, Software Development, Database Design and Development, Web Application Development",
   },
 
   // ── CONNECT ──────────────────────────────────────────
