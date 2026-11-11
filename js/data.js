@@ -51,7 +51,7 @@ var SITE_DATA = {
     {
       name: "Simplicity.AI",
       label: "Frontend",
-      status: "lab",
+      status: "live",
       tags: ["AI", "PDF", "Form Filling"],
       desc: "AI form filler for PDFs. I built the MVP in 4 days after early user interest, then iterated on it from user feedback.",
       featured: true,
