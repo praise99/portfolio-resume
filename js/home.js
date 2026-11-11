@@ -44,11 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (d.EXPERIENCE.length) {
         var html = '<section class="fade-in"><h2>Recent Experience</h2>';
         d.EXPERIENCE.forEach(function (e) {
-            html += '<a href="' + e.href + '" target="_blank" class="block-link">' +
+            var hasLink = e.href && e.href !== '#';
+            html += (hasLink
+                    ? '<a href="' + e.href + '" target="_blank" rel="noopener noreferrer" class="block-link">'
+                    : '<div class="block-link">') +
                 '<div class="block-title">' + e.title + '</div>' +
                 '<div class="block-company">' + e.company + '</div>' +
                 '<div class="block-desc">' + e.desc + '</div>' +
-            '</a>';
+            (hasLink ? '</a>' : '</div>');
         });
         html += '</section>';
         container.innerHTML += html;
