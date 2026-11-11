@@ -101,7 +101,7 @@ var SITE_DATA = {
     },
     {
       title: "Lead Frontend Engineer (Contract)",
-      company: "Astraverse · Remote · Dec 2022 – Jul 2023",
+      company: "Astra Labs · Remote · Dec 2022 – Jul 2023",
       desc: "Immersive 3D e-commerce product experiences with WebGL/Three.js, integrated with the backend via GraphQL. User engagement +45%; Lighthouse scores 65 → 90+; feature development 30% faster after a scalability refactor.",
     },
     {
