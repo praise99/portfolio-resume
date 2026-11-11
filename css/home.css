@@ -247,7 +247,8 @@ a:hover {
 }
 
 /* ── Block Links ── */
-a.block-link {
+a.block-link,
+div.block-link {
   display: block;
   margin-bottom: 36px;
   padding-left: 16px;
