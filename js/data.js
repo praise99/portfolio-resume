@@ -17,10 +17,9 @@ var SITE_DATA = {
     name: "Praise Adeoti",
     subtitle: "Frontend Engineer",
     intro:
-      "Frontend engineer with 5+ years of experience building production web applications using React, Next.js, and TypeScript across fintech, AI, government, and SaaS. Currently building AI products at AskYourPDF, serving a 6M+ user base across its products. Founding frontend engineer at Collectiva, a cooperative management platform that has processed $1.5M+ in transactions. Experienced in frontend architecture, performance optimization, product development, and leading frontend teams. Active contributor to open-source React and TypeScript projects.",
+      "Frontend engineer with 5+ years of experience building production web applications using React, Next.js, and TypeScript across fintech, AI, government, and SaaS. Currently building AI products at AskYourPDF, serving a 6M+ user base across its products. As a side project, I am the founding engineer of Collectiva, a cooperative management platform used by 20+ cooperatives and 1,000+ members that has processed $1.5M+ in transactions. Experienced in frontend architecture, performance optimization, product development, and leading frontend teams. Active contributor to open-source React and TypeScript projects.",
     copyright: "© " + new Date().getFullYear() + " Praise Adeoti",
-    tagline:
-      "Designed by conversation — built entirely by prompting Claude, zero lines of code written by me.",
+    tagline: "",
   },
 
   // ── PROJECTS ─────────────────────────────────────────
@@ -36,7 +35,7 @@ var SITE_DATA = {
       label: "Frontend Engineer",
       status: "live",
       tags: ["AI", "React", "Next.js", "Real-time"],
-      desc: "AI-powered tools (chat, summarization, annotation, OCR, co-writing) with real-time collaboration. Contributed to 28% user retention boost and scaling to over 6 million users globally.",
+      desc: "AI-powered tools (chat, summarization, annotation, OCR, co-writing) with real-time collaboration, serving a 6M+ user base. Page loads 40% faster, API wait time 55% lower, 100 Lighthouse scores and user engagement up 25%.",
       featured: true,
       actions: [{ text: "View Product", href: "https://askyourpdf.com" }],
     },
@@ -60,7 +59,7 @@ var SITE_DATA = {
     },
     {
       name: "Brightway Microfinance Bank",
-      label: "CTO",
+      label: "Frontend Engineer / CTO",
       status: "live",
       tags: ["Fintech", "Digital Banking", "Product"],
       desc: "Directed design and rollout of digital banking solutions, modernizing onboarding and loan processing and streamlining operations to enhance security, accessibility, and customer trust.",
@@ -69,10 +68,10 @@ var SITE_DATA = {
     },
     {
       name: "Collectiva",
-      label: "Co-Founder & CEO",
+      label: "Founding Engineer · Side project",
       status: "live",
-      tags: ["Fintech", "Cooperatives", "Digital Banking", "React"],
-      desc: "Digital cooperative banking platform enabling members to access loans, savings, and bulk credit distribution. Leading product strategy, technical development, and growth. In beta: 9 cooperatives, 300+ users, over 500M Naira in transactions, advancing financial inclusion across Nigeria.",
+      tags: ["Fintech", "Cooperatives", "React", "Next.js"],
+      desc: "Cooperative management platform covering members, contributions, savings, loans, payments and financial reporting, with configurable workflows for each cooperative. Used by 20+ cooperatives and 1,000+ members; $1.5M+ processed. React, Next.js and TypeScript frontend; C# / ASP.NET Core and SQL Server backend.",
       featured: false,
       actions: [{ text: "View Product", href: "https://usecollectiva.com" }],
     },
@@ -82,8 +81,8 @@ var SITE_DATA = {
   EXPLORATIONS: [
     {
       name: "Collectiva",
-      meta: "Co-Founder & CEO · Digital Cooperative Banking",
-      desc: "Digital cooperative banking for loans, savings, and bulk credit. Beta: 9 cooperatives, 300+ users, 500M+ Naira processed. Leading product, tech, and growth.",
+      meta: "Founding Engineer · Side project · 2025 – Present",
+      desc: "Cooperative management platform for savings, loans, contributions and payments. 20+ cooperatives, 1,000+ members, $1.5M+ processed.",
       href: "https://usecollectiva.com",
     },
   ],
@@ -92,26 +91,32 @@ var SITE_DATA = {
   EXPERIENCE: [
     {
       title: "Frontend Engineer",
-      company: "AskYourPDF (Remote)",
-      desc: "Build and ship AI-powered tools (AskYourPDF, CoWriter, Detect.AI, Legal AI, Simplicity.AI) serving 6M+ users. Real-time collaboration in React.js—28% retention boost. Reduced core document load time by 40%; UI/UX improvements drove 22% increase in mobile usage. React, Next.js, Angular, Tailwind.",
+      company: "AskYourPDF / ProtonLabs · Remote · Aug 2023 – Present",
+      desc: "Build and ship AI-powered tools (AskYourPDF, CoWriter, Detect.AI, Simplicity.AI) for a 6M+ user base with React, Next.js, TypeScript and Tailwind CSS. Page loads 40% faster and API wait time 55% lower through SSR, lazy loading and rendering optimisations; 100 Lighthouse scores; user engagement up 25%. Built the Simplicity.AI MVP in 4 days.",
+      href: "#",
+    },
+    {
+      title: "Frontend Engineer / CTO",
+      company: "Brightway Microfinance Bank · Jan 2025 – Apr 2026",
+      desc: "Led frontend development for digital banking products (deposits, transfers, bills, airtime, loans) in React, Next.js, TypeScript and Redux, integrated with core banking and payment services, including a multi-step KYC flow. Platform grew to 10,000+ digital accounts.",
       href: "#",
     },
     {
       title: "Lead Frontend Engineer (Contract)",
-      company: "Astraverse",
-      desc: "Immersive 3D product experiences with WebGL/Three.js—45% engagement increase. Refactored frontend for scalability, 30% faster feature development. Launched 4 e-commerce campaigns with reusable components; Lighthouse scores 65 → 90+.",
+      company: "Astraverse · Remote · Dec 2022 – Jul 2023",
+      desc: "Immersive 3D e-commerce product experiences with WebGL/Three.js, integrated with the backend via GraphQL. User engagement +45%; Lighthouse scores 65 → 90+; feature development 30% faster after a scalability refactor.",
       href: "#",
     },
     {
       title: "Mid-level React Developer",
-      company: "Metricks",
-      desc: "Co-developed affiliate analytics dashboard for 10,000+ marketers. 15+ reusable UI components; referral tracking accuracy +35%. Code reviews and QA reduced frontend bugs by 40%.",
+      company: "Metricks · Lagos · Jan 2022 – Dec 2022",
+      desc: "Co-developed an affiliate analytics dashboard used by 10,000+ marketers. 15+ reusable UI components; referral tracking accuracy +35%. Code reviews and QA reduced frontend bugs by 40%.",
       href: "#",
     },
     {
-      title: "Angular Frontend Engineer (Intern → Team Lead)",
-      company: "Encentral Solutions",
-      desc: "Promoted to Team Lead in 3 years. Enterprise dashboards with Angular, Angular Material, Semantic UI—100% cross-browser. Delivered for NCC, NDIC, NAQS, BPP. Mentored team; code quality and workflow cuts reduced delivery by 25%, client issues by 40%.",
+      title: "Frontend Engineer → Team Lead (joined as intern)",
+      company: "Encentral Solutions · Jan 2021 – Dec 2024",
+      desc: "Led 9 frontend engineers and mentored 16 interns. Shipped 10+ government and enterprise projects, including NCC eServices, BPP CCSP and NDIC Liquidation, with React, AngularJS and TypeScript; built real-time chat with Socket.io.",
       href: "#",
     },
   ],
@@ -121,8 +126,8 @@ var SITE_DATA = {
 
   // ── EDUCATION ────────────────────────────────────────
   EDUCATION: {
-    degree: "B.Sc. (Hons) Computer Science",
-    distinction: "Aug 2017 – Jan 2022",
+    degree: "BSc Computer Science (First Class)",
+    distinction: "2017 – 2022",
     school: "University of Ibadan, Nigeria",
     desc: "Relevant Coursework: Software Analysis and Design, Software Development, Database Design and Development, Web Application Development",
   },
